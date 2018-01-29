@@ -1,0 +1,6 @@
+.Visualization {
+    flex-grow: 1;
+    /* overflow: scroll; */
+    height: 100vh;
+    width: calc(100vw - 30rem);
+}

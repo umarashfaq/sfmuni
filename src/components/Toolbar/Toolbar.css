@@ -1,0 +1,25 @@
+.Toolbar {
+    flex-shrink: 0;
+    width: 30rem;
+    background-color: #fff;
+    height: 100vh;
+    box-shadow: 2px 2px 12px #666;
+}
+
+.Toolbar h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.Toolbar p {
+    font-size: 1.4rem;
+    margin: 0 0 6rem 0;
+}
+
+.Toolbar label {
+    font-size: 1rem;
+}
+
+.Toolbar--container {
+    margin: 2rem;
+}
