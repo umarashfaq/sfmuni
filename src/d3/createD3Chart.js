@@ -43,7 +43,8 @@ export function createD3Chart( options = {} ) {
         throw new Error(`expected 'build' to be a function, found: ${build}`)
     }
 
-    if ( typeof onChangeConfig !== 'function' ) {
+    // onChangeConfig is optional
+    if ( onChangeConfig && typeof onChangeConfig !== 'function' ) {
         throw new Error(`expected 'onChangeConfig' to be a function, found: ${build}`)
     }
 
@@ -73,7 +74,9 @@ export function createD3Chart( options = {} ) {
 
                     config[key] = value
                     
-                    buildSelections.forEach(selection => onChangeConfig(key, selection, configGetter))
+                    if ( onChangeConfig ) {
+                        buildSelections.forEach(selection => onChangeConfig(key, selection, configGetter))
+                    }
                     
                     return __build__
                 }

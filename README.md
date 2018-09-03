@@ -1,5 +1,5 @@
 # Introduction
-This project is a real time visualization of SF-Muni transport system in SF. It has been created as part of coding challenge for ThousandEyes.
+This project is a real time visualization of SF-Muni transport system in SF.
 
 # Dependencies
 Following environment dependencies are required to run this project:
@@ -18,6 +18,11 @@ The last command should automatically open a new tab in your browser. If it does
 - React
 - D3
 - Redux
+
+The project was initialized with `create-react-app` utility.
+
+# Test Coverage
+Test coverage is tiny at the moment. However, some tests have been created for `createD3Chart`. To run the tests, use this command: `yarn run test` or `npm run test`
 
 # Features
 Here are some of the notable features of this project:
@@ -38,6 +43,7 @@ Here are some of the things that need improvement:
 - Vehicles are simple `rect`s at the moment. `path`s can be used instead for more complex shapes.
 - As number of vehicles grow, browser's performance can start going south. Again, `canvas` can be used for performance improvement.
 - NextBus api for fetching vehicle locations is invoked every 15 seconds with with param `t` as `0`. This parameter can be used as per the documentation to reduce response payload size.
+- Test coverage needs to improved.
 
 # Thank You
 Thank you for taking a look at this project. If you have any thoughts or feedback to share, please reach out to me at `umar.mughal2@gmail.com`.

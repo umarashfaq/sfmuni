@@ -47,7 +47,7 @@ export const Toolbar = connect(state => {
                         <h1>SF Muni</h1>
                         <p>A Real-Time SF Muni Visualization</p>
                         
-                        <label>Filter by Routes</label>
+                        <label>Filters (by routes)</label>
                         <Select
                             name="filterRoutes"
                             value={selectedRoutes}
